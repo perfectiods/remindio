@@ -1,0 +1,72 @@
+h1, h2, h3, h4 {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  /*line-height: 1.5;*/
+  
+  /* Location of the image */
+  background-image: url(/www/img/3.jpg);
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+.wrapper {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.container {
+ /* position: absolute;*/
+  top: 10%;
+  transform: translate(0, 0%); /*сдвиг элменета по горизонтали 0, вертикали 10% */
+  line-height: 1.8;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* Т.к. размер 3.jpg небольшой, он подключается и для мобильных
+     * to improve page load speed on mobile internet connections */
+    background-image: url(/www/img/3.jpg);
+  }
+}

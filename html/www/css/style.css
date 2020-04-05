@@ -1,0 +1,123 @@
+*, *:after, *:before {
+/*box-sizing: border-box;*/
+padding: 0;
+margin: 0;
+/*transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #0080FF;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+
+/* --- Стили для Body --- */
+body {
+font-family: 'Comfortaa', cursive;
+/*font-family: 'Open Sans', arial, sans-serif;*/
+line-height: 1.5;
+}
+
+h2 {
+ font-size: 35px;
+}
+
+h3 {
+ font-size: 20px;
+}
+
+#button_ok {
+  cursor: pointer;
+  height: 2em;
+  width: 9.3em;
+  font-size: 1em;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-family: 'Comfortaa', cursive;
+  background-color: white;
+}
+
+#show {
+  cursor: pointer;
+  height: 2em;
+  width: 9.3em;
+  font-size: 1em;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-family: 'Comfortaa', cursive;
+  background-color: white;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+  height: 5em;
+  position: relative;
+}
+#wrapper-form {
+  position: absolute;
+  top: 20%;
+  transform: translate(0, 50%); /*сдвиг элменета по горизонтали 0, вертикали 50% */
+}
+
+/* --- Стили для формы записи именинников --- */
+input[type=text] {
+    /* width: 50%; */
+    padding-left: 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 10.8em;
+    height: 2em;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+}
+
+select {
+    width: 3.5em;
+    padding: 1px 1px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Comfortaa', cursive;
+}
+
+input[type=date] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 11em;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Стили фоновых изображений, слайд-шоу, для мобильных устрйоств описаны в style_background.css */
+
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  .wrapper {
+   margin-left: auto;
+   margin-right: auto;
+   width:100% !important;
+  }
+  
+  #wrapper-form {
+    position: relative;
+    top: 20%;
+    transform: translate(0, 0%);
+    margin-left: 1em;
+  }
+}
+

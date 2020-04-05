@@ -1,0 +1,123 @@
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  /*line-height: 1.5;*/
+  
+  /* Location of the image */
+  background-image: url(/www/img/3.jpg);
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+     /* Т.к. размер 3.jpg небольшой, он подключается и для мобильных
+     * to improve page load speed on mobile internet connections */
+    background-image: url(/www/img/3.jpg);
+  }
+}
+
+.wrapper {
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 20em;
+    border-radius: 5px;
+    /*border: 2px solid grey;*/
+    top: 50%;
+    transform: translate(0, 50%);
+}
+.child {
+    width: 20em;
+    max-width: 30em;
+    height: 20em;    
+    text-align: center;       
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+/* Кнопки */
+input#reg-submit, input#enter-auth, input#button-remind {
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 1em;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-family: 'Comfortaa', cursive;
+  background-color: white;
+}
+
+/* Поля ввода */
+input#login, input#email, input#password, input#login_auth, input#password_auth, input#email_remind {
+  margin-bottom: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 10em;
+  height: 1.4em;
+  font-size: 18px;
+  font-family: 'Comfortaa', cursive;
+}
+
+#confident {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+#confident a {
+  color: #3d5c5c;
+  font-style: italic;
+  text-decoration: none;
+  
+  
+  border-bottom-style: dashed;
+  border-bottom-color: grey;
+  border-bottom-width: 1px;
+}
+
+.h3-class-reset {
+  padding-top: 10%;
+  margin: 5px;
+}
+
+/* Стили окна ошибки регистрации и авторизации*/
+#error_reg_validate, #error_auth_validate, #error_verify, #error_auth, #password_forgot_msg {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  color: red;
+  text-align: center;
+}

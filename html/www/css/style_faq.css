@@ -1,0 +1,53 @@
+#howto {
+  float: left;
+  padding: 1% 1%;
+}
+
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  
+}
+
+li {
+  overflow: hidden;
+  /*border-bottom: 1px dashed #EFFBFB;*/
+  color: #EFFBFB;
+}
+
+li h1 {
+  position: relative;  
+  margin: 0.2em 0;
+  padding-left: 1em;
+  font-size: 1em; 
+  cursor: pointer;
+}
+
+li h1:focus {
+  color: black;
+  outline: 0;
+}
+
+li h1::before {
+  content: '>'; 
+  position: absolute;
+  top: 0;
+  left: 0;  
+  width: 1em; 
+  text-align: center;
+}
+
+li h1:focus::before {
+  transform: rotate(90deg);
+}
+
+li p {
+  display: none;
+  color: black;
+  font-size: 1em;
+}
+
+li h1:focus ~ p {
+  display: block;
+}
